@@ -1,0 +1,10 @@
+<div>
+    <div class="alert alert-info"><h4>Blog entries from Google Blog Feed:</h4></div>
+    <table class="table table-bordered table-striped table-condensed" ng-repeat="n in data.responseData.entries | filter:blogSearch">
+        <tr>
+            <td ><div ng-bind-html="n.title"></div><br/>
+                <div ng-bind-html="n.contentSnippet"></div>
+            </td>
+        </tr>
+    </table>
+</div>

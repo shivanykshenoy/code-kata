@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css"/>
+    <title>CodeKata</title>
+</head>
+<body ng-app="CodeKata">
+    <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input type="text" ng-model="blogSearch" placeholder="Search">
+        </div>
+    </form>
+    <div class="jumbotron">
+        <h3 class="text-info">Welcome to your new app template. Feel free to change things around!</h3>
+    </div>
+    <div ng-view>
+
+    </div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script type="text/javascript" src="angularjs/sample/sampleCtrl.js"></script>
+<script type="text/javascript" src="angularjs/sample/sampleService.js"></script>
+<script type="text/javascript" src="angularjs/sample/sampleDirectives.js"></script>
+<script type="text/javascript" src="angularjs/app.js"></script>
+</html>
