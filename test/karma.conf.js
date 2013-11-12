@@ -27,9 +27,7 @@
                 //  unitTestDir + '/lib/angular-strap.js',
                 libDir + '/angular-resource/angular-resource.js',
                 libDir + '/sugar/release/sugar-full.development.js',
-                'angularjs/app.js',
-                'angularjs/**/*Ctrl.js',
-                'angularjs/**/*Service.js',
+                'angularjs/**/*.js',
                 unitTestDir + '/**/*Spec.js'
             ],
 
