@@ -5,7 +5,7 @@ Starting project for angularjs kata exercises, hands on problem-solving and in-d
 
 ### What is it?
 
-For more information on Code Katas visit: http://codekata.pragprog.com/
+Hone your angularjs skills.  For more information on Code Katas visit: http://codekata.pragprog.com/
 
 ### Setting up
 
