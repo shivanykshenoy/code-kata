@@ -25,7 +25,6 @@
                     result_1 = result;
                 }
             }
-
             $scope.result = result;
         });
 

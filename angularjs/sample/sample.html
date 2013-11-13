@@ -1,4 +1,8 @@
 <div>
+    <div class="jumbotron">
+        <br>
+           <h4><input type="text" ng-model="blogSearch" placeholder="Search"></h4>
+    </div>
     <div class="alert alert-info"><h4>Blog entries from Google Blog Feed:</h4></div>
     <table class="table table-bordered table-striped table-condensed" ng-repeat="n in data.responseData.entries | filter:blogSearch">
         <tr>

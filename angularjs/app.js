@@ -21,7 +21,7 @@
     var ngModule = angular.module('codeKata', ['codeKata.SampleCtrl',
                                                 'codeKata.sampleService',
                                                 'codeKata.sampleDirectives',
-                                                'codeKata.FibonnaciCtrl',
+                                                'codeKata.FibonacciCtrl',
                                                 'ngRoute',
                                                 'ngSanitize']),
         cacheBustSuffix = new Date().getTime();
@@ -31,7 +31,7 @@
 
         // default route:
         $routeProvider.when('/sample', {templateUrl: 'angularjs/sample/sample.html?cache-bust=' + cacheBustSuffix, controller: 'SampleCtrl'});
-        $routeProvider.when('/fibonnaci', {templateUrl: 'angularjs/fibonnaci/fibonnaci.html?cache-bust=' + cacheBustSuffix, controller: 'FibonnaciCtrl'});
+        $routeProvider.when('/fibonacci', {templateUrl: 'angularjs/fibonacci/fibonacci.html?cache-bust=' + cacheBustSuffix, controller: 'FibonacciCtrl'});
         $routeProvider.otherwise({redirectTo: '/sample'});
     }]);
 
