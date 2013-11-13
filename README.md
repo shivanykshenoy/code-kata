@@ -19,6 +19,19 @@ Then, also run :
 $ bower install
 ```
 
+In order to execute the tests, you need Karma,
+
+```
+$ npm install -g karma
+```
+Go into the test directory where karma.conf.js is located and run:
+
+```
+$ cd test
+```
+
+More info on Karma can be found here: http://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-karma.html
+
 For a crash course on npm and bower, please visit: http://www.youtube.com/watch?v=vkRv0r_tNXY
 
 ## License
