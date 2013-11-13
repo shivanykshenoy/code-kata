@@ -22,6 +22,8 @@
                                                 'codeKata.sampleService',
                                                 'codeKata.sampleDirectives',
                                                 'codeKata.FibonacciCtrl',
+                                                'codeKata.HomeCtrl',
+                                                'codeKata.FizzBuzzCtrl',
                                                 'ngRoute',
                                                 'ngSanitize']),
         cacheBustSuffix = new Date().getTime();
@@ -32,7 +34,9 @@
         // default route:
         $routeProvider.when('/sample', {templateUrl: 'angularjs/sample/sample.html?cache-bust=' + cacheBustSuffix, controller: 'SampleCtrl'});
         $routeProvider.when('/fibonacci', {templateUrl: 'angularjs/fibonacci/fibonacci.html?cache-bust=' + cacheBustSuffix, controller: 'FibonacciCtrl'});
-        $routeProvider.otherwise({redirectTo: '/sample'});
+        $routeProvider.when('/home', {templateUrl: 'angularjs/home/home.html?cache-bust=' + cacheBustSuffix, controller: 'HomeCtrl'});
+        $routeProvider.when('/fizzBuzz', {templateUrl: 'angularjs/fizzBuzz/fizzBuzz.html?cache-bust=' + cacheBustSuffix, controller: 'FizzBuzzCtrl'});
+        $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
 }(window.angular));

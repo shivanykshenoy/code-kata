@@ -1,0 +1,12 @@
+<div class="jumbotron">
+
+    <h4>Write a program that prints the numbers from 1 to (n). But for multiples of 3 print “Fizz” instead of the number and for the multiples of 5 print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+        <hr/>
+     Enter a number input: <input type="text" class="span2" ng-model="fizzBuzzInput"/></h4>
+    <hr/>
+
+</div>
+<div class="alert alert-danger" ng-show="errorMessage"> {{errorMessage}} </div>
+<ol>
+    <li ng-repeat="n in resultArray track by $index">{{n}}</li>
+</ol>
