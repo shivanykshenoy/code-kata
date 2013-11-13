@@ -24,6 +24,7 @@
                                                 'codeKata.FibonacciCtrl',
                                                 'codeKata.HomeCtrl',
                                                 'codeKata.FizzBuzzCtrl',
+                                                'codeKata.IntegerToEnglishCtrl',
                                                 'ngRoute',
                                                 'ngSanitize']),
         cacheBustSuffix = new Date().getTime();
@@ -36,6 +37,7 @@
         $routeProvider.when('/fibonacci', {templateUrl: 'angularjs/fibonacci/fibonacci.html?cache-bust=' + cacheBustSuffix, controller: 'FibonacciCtrl'});
         $routeProvider.when('/home', {templateUrl: 'angularjs/home/home.html?cache-bust=' + cacheBustSuffix, controller: 'HomeCtrl'});
         $routeProvider.when('/fizzBuzz', {templateUrl: 'angularjs/fizzBuzz/fizzBuzz.html?cache-bust=' + cacheBustSuffix, controller: 'FizzBuzzCtrl'});
+        $routeProvider.when('/phrase', {templateUrl: 'angularjs/integerToEnglish/integerToEnglish.html?cache-bust=' + cacheBustSuffix, controller: 'IntegerToEnglishCtrl'});
         $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
